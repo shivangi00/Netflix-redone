@@ -1,0 +1,410 @@
+body{
+    margin-right: 0;
+    justify-content: center;
+    background-color: #000000;
+    background-image: url('../media/netflix_bg.jpg');
+    background-size:100%;
+    width: 100%;
+    height: 680px;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 100%;
+    height: 55px;
+    z-index: 2;
+}
+
+.overlay-nav{    
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo .logo-img{
+    margin-top: -20px;
+    padding-left: 10px;
+    position: relative;
+    text-shadow: #ff0000;
+    height: 112px;
+    width: 203px;
+    z-index: 2;
+}
+
+.signIn {
+    background-color: rgb(216, 15, 15);
+    border: none;
+    border-radius: 0.15rem;
+    color: white;
+    padding: 5.5px 16.3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: -17px 42px 2px;
+    cursor: pointer;
+}
+
+/*Home Screen*/
+    .site_title{
+        position: absolute;
+        top: 60%;
+        left: 23.5%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 2;
+        font-family: sans-serif;
+    }
+
+    .site_title h1{
+        text-align:  center;
+        font-family: sans-serif;
+        font-size: 2.9rem;
+        display: block;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        color: white;
+        text-shadow: whitesmoke;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 9px;
+    }
+
+    .site_title h3{
+        text-align:  center;
+        font-family: sans-serif;
+        font-weight: normal;
+        letter-spacing: 0.007rem;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .site_title h5{
+        text-align:  center;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+
+    .overlay{
+        background:rgba(0, 0, 0, 0.315);
+        background: #16151594;
+        background: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.911) 0,rgba(0, 0, 0, 0.932) 60%,rgba(0, 0, 0, 0.904) 100%);
+        background: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.863) 0,rgba(0, 0, 0, 0.856) 60%,rgba(0, 0, 0, 0.918) 100%);
+        background: -moz-linear-gradient(bottom,rgba(0, 0, 0, 0.932) 0,rgba(0, 0, 0, 0.705) 60%,rgba(0, 0, 0, 0.918) 100%);
+        background: -o-linear-gradient(bottom,rgba(0, 0, 0, 0.911) 0,rgba(0, 0, 0, 0.719) 60%,rgba(0, 0, 0, 0.904) 100%);
+        background: linear-gradient(to top,rgba(0, 0, 0, 0.897) 0,rgba(0, 0, 0, 0.534) 60%,rgba(0, 0, 0, 0.808) 100%);
+        box-shadow: inset 10px 10px 5000px #00000063, inset -10px -10px 5000px #00000073;
+        width: 100%;
+        height: 710px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .email-box{
+        padding-top: 20px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tbox, .btn{
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
+
+    .tbox{
+        width: 450px;
+        padding: 0 10px;
+    }
+
+    .btn{
+        width: 240px;
+        background: #e20909;
+        color: white;
+        padding: 0 10px;
+        font-size: 25px;
+        letter-spacing: 0.02rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .btn i{
+        padding-top: 5px;
+        font-size: 25px;
+        height: 20px;
+        font-weight: 600;
+    }
+
+    .btn:hover{
+        background: #ff0000;
+        color: white;
+    }
+
+/*Card sections*/
+    
+    .card-anim{
+        background-color: #000000;
+        background-size: auto;
+        border-top: #4b4a4a solid 8px;
+        border-bottom: #4b4a4a solid 8px;
+        margin-top: 40.5rem;
+        margin-left: -5rem;
+        z-index: 2;
+        color: white;
+        width: 1266px;
+        height: 500px;
+        position: relative;
+    }
+
+    .card-text1 h1{
+        float: left;
+        margin:160px 90px 10px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: 0.06rem;
+    }
+
+    .card-text1 h3{
+        float: left;
+        margin:15px 90px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 0.005rem;
+        line-height: 1.8rem;
+    }
+
+
+    .card-animation img{
+        height: 390px;
+        margin-top: -12rem;
+        margin-right: 60px;
+        float: right;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .card-video video{
+        display: inline-grid;
+        grid-template-columns: 50% 40%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        z-index: -1;
+        margin-bottom: -19rem;
+        margin-left: 9rem;
+        width: 27%;
+        height: 54%;
+    }
+
+    .card-download{
+        background-color: #000000;
+        background-size: cover;
+        border-top: #4b4a4a solid 8px;
+        border-bottom: #4b4a4a solid 8px;
+        margin: 460px -0.3px 0px;
+        z-index: 2;
+        color: white;
+        width: 1266px;
+        height: 500px;
+        position: relative;
+    }
+
+    .card-text2 h1{
+        float: right;
+        margin:140px 90px 10px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: 0.06rem;
+        line-height: 3.5rem;
+    }
+
+    .card-text2 h3{
+        float: right;
+        margin:15px 135px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 0.005rem;
+        line-height: 1.8rem;
+    }
+
+    .download img{
+        float: left;
+        margin-bottom: 5rem;
+        margin-top: -15rem;
+        width: 30rem;
+        height: 21rem;
+    }
+
+    .dwnld-anime{
+        position: absolute;
+        left: 50%;
+        bottom: 8%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin: 0 auto;
+        background-color: #000000;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 60%;
+        min-width: 15em;
+        padding: .25em .65em;
+        border: 2px solid rgba(255,255,255,.25);
+        -webkit-box-shadow: 0 0 2em 0 #000;
+        -moz-box-shadow: 0 0 2em 0 #000;
+        box-shadow: 0 0 2em 0 #000;
+        -webkit-border-radius: .75em;
+        -moz-border-radius: .75em;
+        border-radius: .75em;
+    }
+
+    .dwnld-anime img{
+        z-index: 2;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .card-watch{
+        background-color: #000000;
+        background-size: cover;
+        border-top: #4b4a4a solid 8px;
+        border-bottom: #4b4a4a solid 8px;
+        margin: -5px -0.3px 0px;
+        z-index: 2;
+        color: white;
+        width: 1266px;
+        height: 500px;
+        position: relative;
+    }
+
+    .card-text3 h1{
+        float: left;
+        margin:153px 90px 10px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: 0.06rem;
+        line-height: 3.5rem;
+    }
+
+    .card-text3 h3{
+        float: left;
+        margin:25px 90px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 0.005rem;
+        line-height: 1.8rem;
+    }
+
+    .anim{
+        width: 100%;
+        float: right;
+        display: inline-grid;
+        margin-top: -8.5rem;
+        grid-template-columns: 50% 40%;
+    }
+
+    .anim img{
+        float: right;
+        margin-top: -9rem;
+        height: 25rem;
+        width: 33rem;
+        z-index: 3;
+        margin-left: 40rem;
+    }
+
+    .watch-anim video{
+        float: right;
+        margin-top: -6rem;
+        width: 35rem;
+        height: 65%;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        z-index: -1;
+        margin-right: -2.5rem;
+    }
+
+    .card-kids{
+        background-color: #000000;
+        background-size: cover;
+        border-top: #4b4a4a solid 8px;
+        border-bottom: #4b4a4a solid 8px;
+        margin: -5px -0.3px 0px;
+        z-index: 2;
+        color: white;
+        width: 1266px;
+        height: 500px;
+        position: relative;
+    }
+
+    .card-text4 h1{
+        float: right;
+        margin:140px 90px 10px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: 0.06rem;
+        line-height: 3.5rem;
+    }
+
+    .card-text4 h3{
+        float: right;
+        margin:15px 75px;
+        z-index: 1;
+        font-family: sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 0.005rem;
+        line-height: 1.8rem;
+    }
+
+    .kids-img {
+        float: left;
+        margin-top: -20rem;
+        margin-left: 5rem;
+    }
+
+    .kids-img img{
+        height: 25rem;
+        width: 33rem;
+    }
